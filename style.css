@@ -3,7 +3,8 @@
 body{
    background-color: black; 
    margin: 0;
-   font-family: sans-serif;
+   font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
 }
 header {
     background-color: rgba(51, 14, 86, 1);
@@ -38,11 +39,14 @@ header {
   /* main part style */
 
   .main-container{
-  background-image: url(images/main-background.jpg);
+  background-image: url(images/main-background-3.jpg);
   background-size: cover;
   background-position: center;
   height: 900px;
   width: 100%;
+  margin-bottom: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   }
   .containers{
     width: 100%;
@@ -56,9 +60,25 @@ header {
   .containers h1{
     color: #faf6f6;
     font-size: 8rem;
-    text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+text-align: center;
   }
+  /* style of section pubg logo */
+.pubg-logo-side h2{
+  color: #faf6f6;
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+}
+.pubg-logo-side img{
+  display: block;
+  margin: auto
+  ;
+}
+
+
   @keyframes insideOutMove {
     0% {
       transform: scale(.95);
@@ -75,6 +95,10 @@ header {
   }
   /* Responsive Adjustments */
   @media (max-width: 768px) {
+    body{
+      font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+    }
     header{
       background-color: rgb(16 15 14);
       padding: 20px;
@@ -111,8 +135,23 @@ header {
     .containers h1{
       font-size: 2.5rem;
       text-align: center;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family: 'Montserrat', sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
     }
+    /* 2nd-part */
+    .pubg-logo-side h2{
+      
+      text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    }
+    .pubg-logo-side img {
+      display: block;
+      margin: auto;
+      height: 180px;
+      margin-top: 0;
+  }
   }
   
