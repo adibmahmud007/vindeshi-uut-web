@@ -1,6 +1,8 @@
 /* Basic Styling */
+
 body{
    background-color: black; 
+   margin: 0;
    font-family: sans-serif;
 }
 header {
@@ -15,12 +17,12 @@ header {
   }
   
   .logo-side img {
-    height: 130px;
+    height: 150px;
     margin-left: 50px;
   }
   
   .dashboard-side a {
-    margin-left: 20px;
+    margin-left: 30px;
     text-decoration: none;
     color: #faf6f6;
     font-size: 2vw;
@@ -31,34 +33,86 @@ header {
    border-radius: 5px;
    transition: .5s;
   }
+
+
   /* main part style */
-  main{
-   
-    background-image: url(images/main-background.jpg);
-    height: 700px;
+
+  .main-container{
+  background-image: url(images/main-background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 900px;
+  width: 100%;
   }
-  main h1{
+  .containers{
+    width: 100%;
+  }
+  .containers img{
+    display: block;
+    margin: auto;
+    height: 400px;
+    width: 400px;
+  }
+  .containers h1{
     color: #faf6f6;
-    font-size: 5vw;
+    font-size: 8rem;
     text-align: center;
-    padding-top: 150px;
     font-family:Verdana, Geneva, Tahoma, sans-serif
   }
-  
+  @keyframes insideOutMove {
+    0% {
+      transform: scale(.95);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(.95);
+    }
+}
+  .containers img {
+    animation: insideOutMove 1.5s infinite; 
+  }
   /* Responsive Adjustments */
   @media (max-width: 768px) {
+    header{
+      background-color: rgb(16 15 14);
+      padding: 20px;
+    }
     nav {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
     }
-    
+    .logo-side img{
+      margin-left: 0;
+      height: 80px;
+    }
     .dashboard-side {
-      margin-top: 10px;
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
     }
-    
     .dashboard-side a {
       display: block;
       margin: 5px 0;
+      font-size: 12px;
+    }
+    /* main part design */
+    .main-container{
+      height: 350px;
+    width: 100%;
+    }
+    .containers img{
+      display: block;
+      margin: auto;
+      height: 180px;
+    width: 180px;
+    }
+    .containers h1{
+      font-size: 2.5rem;
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      margin: 0;
     }
   }
   
