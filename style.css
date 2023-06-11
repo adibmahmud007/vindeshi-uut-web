@@ -74,10 +74,56 @@ font-family: 'Poppins', sans-serif;
 }
 .pubg-logo-side img{
   display: block;
-  margin: auto
-  ;
+  margin: auto;
 }
 
+.pubg-logo-side img:hover
+{
+ border: 2px solid rgb(58, 8, 73);
+ transition: 1.5s;
+}
+
+/* footer design */
+footer{
+  height: 200px;
+  width: auto;
+  color: #130f0f;
+  text-align: center;
+  background-image: url(images/footer-2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.courtesy h3{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif; ;
+  font-weight: 500;
+  font-size: 25px;
+  padding-left: 20px;
+}
+.courtesy a{
+  font-size: 30px;
+  color: #130f0f;
+  padding-left: 20px;
+  
+}
+.courtesy{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif; ;
+  font-weight: 300;
+  font-size: 15px;
+  
+}
+.courtesy h4{
+  font-size: 20px;
+  font-weight: 300;
+  color: #c6c3c3;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif; ;
+}
+.adib{
+  background-image: linear-gradient(rgb(4, 38, 58),rgb(19, 115, 118));
+  border-radius: 5px;
+}
 
   @keyframes insideOutMove {
     0% {
@@ -152,6 +198,23 @@ font-family: 'Poppins', sans-serif;
       margin: auto;
       height: 180px;
       margin-top: 0;
+  }
+  /* footer design */
+  .courtesy h3
+  {
+    font-size: 25px;
+  }
+  .courtesy a{
+    font-size: 30px;
+    padding-right: 10px;
+  }
+    .courtesy h4 {
+      font-size: 17px;
+      height: 20px;
+      width: 300px;
+      display: block;
+      margin: auto;
+      margin-top: 50px;
   }
   }
   
